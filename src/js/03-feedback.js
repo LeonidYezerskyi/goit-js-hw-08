@@ -30,7 +30,7 @@ function fillInput() {
     const savedFormData = localStorage.getItem(STORAGE_KEY);
     const parsedFormData = JSON.parse(savedFormData);
     if (parsedFormData) {
-        email.value = parsedFormData.email || '';
-        textarea.value = parsedFormData.message || '';
+        form.elements.email.value = parsedFormData.email || '';
+        form.elements.message.value = parsedFormData.message || '';
     }
 }
